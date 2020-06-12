@@ -107,7 +107,7 @@ span.glyphicon.glyphicon-triangle-bottom {
 	box-shadow: none;
 }
 .progress-bar-info {
-	background-color: #ACB5B8;
+	background-color: #00CFBD;
     box-shadow: none;
 }
 .progress-bar-warning {
@@ -170,7 +170,9 @@ span.glyphicon.glyphicon-console {
 	border: 2px solid;
 	padding: 1em;
 }
-
+span.glyphicon.glyphicon-console:hover {
+    color: #00CFBD;
+}
 span.glyphicon.glyphicon-triangle-right {
 	font-size: 2em;
 	color: #ACB5B8;
@@ -178,13 +180,18 @@ span.glyphicon.glyphicon-triangle-right {
 	border: 2px solid;
 	padding: 1em;
 }
-
+span.glyphicon.glyphicon-triangle:hover {
+    color: #00CFBD;
+}
 span.glyphicon.glyphicon-phone{
 	font-size: 2em;
 	color: #ACB5B8;
 	border-radius: 50px;
 	border: 2px solid;
 	padding: 1em;
+}
+span.glyphicon.glyphicon-phone:hover {
+    color: #00CFBD;
 }
 span.glyphicon.glyphicon-signal{
 	font-size: 2em;
@@ -380,6 +387,7 @@ i.beh {
 	}
 	.study-grid h3 {
 		font-size: 2em;
+		font-weight: bold;
 	}
 	.study-grid p {
 		font-size: 1.1em;
