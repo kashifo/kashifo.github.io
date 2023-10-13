@@ -40,7 +40,12 @@ body{
 	padding:0 0;
 	margin:0 0; 
 	font-family: 'OpenSans-Regular';
-	
+}
+.bodyul{
+	padding:0 0;
+	margin:0 0; 
+	font-family: 'OpenSans-Regular';
+	font-size: 1.3em;
 }
 .header-section {
 	background: url(../images/services-bg.jpg);
