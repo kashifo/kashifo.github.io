@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+:root {
+  /* Refined cyberpunk color palette */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: rgba(255, 255, 255, 0.02);
+  --accent-cyan: #00d4ff;
+  --accent-magenta: #e91e8c;
+  --accent-purple: #7209b7;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.4);
+  --gradient-primary: linear-gradient(135deg, #e96443 0%, #904e95 100%);
+  --gradient-glow: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-magenta) 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--accent-cyan), var(--accent-magenta));
+  border-radius: 3px;
+}
+
+/* Glass effect */
+.glass {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Neon glow effects - refined */
+.glow-cyan {
+  box-shadow: 0 0 16px rgba(0, 212, 255, 0.25);
+}
+
+.glow-cyan-subtle {
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.15);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 16px rgba(233, 30, 140, 0.25);
+}
+
+.text-glow {
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Grid pattern background */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Tech pill styles - refined */
+.tech-pill {
+  @apply px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+}
+
+.tech-pill:hover {
+  border-color: rgba(0, 212, 255, 0.4);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.tech-pill.active {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(233, 30, 140, 0.15));
+  border-color: rgba(0, 212, 255, 0.5);
+  color: var(--text-primary);
+}
+
+/* Stat card hover */
+.stat-card {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Animations - smoother */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link hover effect - refined */
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #33dfff;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 212, 255, 0.3);
+  color: white;
+}

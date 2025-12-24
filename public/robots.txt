@@ -1,0 +1,6 @@
+# Robots.txt for kashifo.github.io
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kashifo.github.io/sitemap.xml
