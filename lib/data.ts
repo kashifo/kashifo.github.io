@@ -5,8 +5,8 @@ export const GITHUB_USERNAME = "kashifo";
 export const PROFILE = {
     name: "Kashif Anwaar",
     title: "Technologist, Software & Product Enthusiast, Coding Hobbyist",
-    bio: "Tech, Computers, & Software are my passion, developing software is my hobby. Currently building Social Nest AI.",
-    socialNestUrl: "https://socialnestai.com/",
+    bio: "Tech, Computers, & Software are my passion, developing software is my hobby. Currently building Viral Suite",
+    socialNestUrl: "https://viralsuite.in/",
     cvUrl: "https://thekashif.web.app/",
     githubUrl: "https://github.com/kashifo",
     avatarUrl: "https://avatars.githubusercontent.com/u/13944934?v=4",
